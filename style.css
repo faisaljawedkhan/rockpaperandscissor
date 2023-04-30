@@ -110,6 +110,10 @@ nav h1 {
     font-size: 39px;
 }
 
+/* * {
+    border: 1px solid red;
+} */
+
 .player-and-computer {
     display: flex;
     justify-content: center;
@@ -143,4 +147,37 @@ nav h1 {
 img {
     width: 250px;
     height: 300px;
+}
+
+/* Responsive Page Start Here */
+@media only screen and (max-width: 650px) {
+    .player-and-computer {
+        flex-direction: column;
+    }
+    .buttons button {
+        padding: 0.5rem 1rem;
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width: 467px) {
+    .playNowBtn button {
+        padding: 0.5rem 2rem;
+        font-size: 27px;
+    }
+    .image-player-div, .image-computer-div {
+        margin: 0 0rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .buttons button {
+        margin: 0 0.5rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .buttons button {
+        margin: 0 0.3rem;
+    }
+    .buttons {
+        justify-content: space-evenly;
+    }
 }
