@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissor Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+   <div id="mainFirstDiv" class="mainFirstDiv">
+    <nav>
+        <h1>ROCK, PAPER &amp; SCISSOR GAME</h1>
+    </nav>
+
+    <div class="playNowBtn">
+        <button onclick="playBtn()" id="startPlayBtn">Play Now!!!</button>
+    </div>
+   </div>
+
+   <div class="resetGameDiv hideResetGameDiv" id="resetGameDiv">
+        <div id="showPlayerOrCompScore" class="showPlayerOrCompScore"></div>
+   </div>
+    <div class="playSection" id="playSection">
+        <div class="buttons">
+            <span><button class="rockBtn" id="rockBtn">ROCK</button></span>
+            <span><button class="paperBtn" id="paperBtn">PAPER</button></span>
+            <span><button class="scissorBtn" id="scissorBtn">SCISSOR</button></span>
+        </div>
+        <div class="player-and-computer">
+        <div class="player-div">
+            <h2>Player <span class="pScore" id="pScore"></span></h2>
+            <div class="image-player-div" id="playerDiv"></div>
+        </div>
+        <div class="computer-div">
+            <h2>Computer <span class="cScore" id="cScore"></span></h2>
+            <div class="image-computer-div" id="computerDiv"></div>
+        </div>
+        </div>
+    
+        <div class="result-div">
+            <h1 id="showResult"></h1>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

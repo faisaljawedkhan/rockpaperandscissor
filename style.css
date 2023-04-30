@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quintessential', cursive;
+}
+
+body {
+    background: #ecf0f1;
+}
+
+nav {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #255A56;
+}
+
+nav h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.playSection {
+    display: none;
+}
+
+.showPlaySection {
+    display: block;
+}
+
+.playNowBtn, .resetGameDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hideResetGameDiv {
+    display: none;
+}
+
+.showResetGameDiv {
+    display: block;
+}
+
+.showPlayerOrCompScore h2, .showPlayerOrCompScore h1, .showPlayerOrCompScore h3 {
+    text-align: center;
+    color: #2d3436;
+}
+
+.showPlayerOrCompScore h2 span {
+    font-size: 41px;
+    color: #255A56;
+}
+
+.showPlayerOrCompScore h3 {
+    margin-top: 1rem;
+}
+
+.playNowBtn button {
+    padding: 1rem 3rem;
+    font-size: 29px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid goldenrod;
+    color: rgb(173, 9, 173);
+    font-weight: 700;
+    border-radius: 11px;
+}
+
+#showPlayerOrCompScore {
+    margin: 2rem 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.buttons button {
+    margin: 0 1rem;
+    padding: 0.5rem 3rem;
+    font-size: 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid goldenrod;
+    font-weight: 700;
+}
+
+.player-div h2, .computer-div h2 {
+    text-align: center;
+    font-size: 33px;
+    color: black;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.player-div h2 .pScore, .computer-div h2 .cScore {
+    color: red;
+    margin-left: 1rem;
+    font-size: 39px;
+}
+
+.player-and-computer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-player-div, .image-computer-div {
+    width: 254px;
+    height: 304px;
+    border: 2px solid goldenrod;
+    margin: 0 3rem;
+}
+
+.result-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.result-div h2 {
+    font-weight: 700;
+    font-size: 29px;
+}
+
+.result-div h1 {
+    margin-top: 2rem;
+}
+
+img {
+    width: 250px;
+    height: 300px;
+}
